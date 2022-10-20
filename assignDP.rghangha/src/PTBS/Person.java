@@ -28,8 +28,8 @@ abstract public class Person {
         theProductMenu.showRadioButton();
     }
 
-    public void showComboxes() {
-        theProductMenu.showComboxes();
+    public void showLabels() {
+        theProductMenu.showLabels();
     }
 
     public void show() {
