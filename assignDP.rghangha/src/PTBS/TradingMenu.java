@@ -1,5 +1,7 @@
 package PTBS;
 
+// Facade Design Pattern
+
 import javax.swing.*;
 
 abstract public class TradingMenu extends JDialog {

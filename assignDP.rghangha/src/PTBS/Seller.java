@@ -1,5 +1,7 @@
 package PTBS;
 
+// Bridge Design Pattern
+
 public class Seller extends Person{
 
     public Seller() {

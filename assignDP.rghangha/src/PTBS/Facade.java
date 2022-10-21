@@ -133,7 +133,7 @@ public class Facade {
         ProductSelectDlg theDlg = new ProductSelectDlg();
         theSelectedProduct = theDlg.showDlg(thePerson.productList);
         thePerson.currentProduct = theSelectedProduct;
-        nProductLevel = theDlg.nProductLevel;
+        nProductLevel = theDlg.productCategory;
         return theDlg.isLogout();
     }
 

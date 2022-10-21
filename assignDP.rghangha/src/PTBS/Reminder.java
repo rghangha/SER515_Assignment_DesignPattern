@@ -1,6 +1,6 @@
 package PTBS;
 
-// Facade & Visitor Design Pattern
+// Facade and Visitor Design Pattern
 
 import javax.swing.*;
 import java.awt.*;

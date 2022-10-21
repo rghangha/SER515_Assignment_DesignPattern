@@ -1,6 +1,6 @@
 package PTBS;
 
-import org.jetbrains.annotations.NotNull;
+// Visitor Design Pattern
 
 import java.util.Calendar;
 import java.util.Date;
@@ -52,7 +52,6 @@ public class ReminderVisitor extends NodeVisitor {
                         + " Due Date is " + trading.getDueDateString());
             }
             if (nDueDate < ntoday) {
-                // put to the
                 theReminder.listOverDue.add(trading.tradingName + " Due Date is "
                         + trading.getDueDateString());
             }

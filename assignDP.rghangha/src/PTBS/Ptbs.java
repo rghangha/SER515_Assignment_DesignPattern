@@ -9,6 +9,24 @@ public class Ptbs {
     }
 
     public static void main(String[] args) {
-        System.out.println("Test");
+        UserInfoItem userInfoItem = new UserInfoItem();
+        facade.createProductList();
+        while(true) {
+            boolean lExit = false;
+            lExit = Facade.login(userInfoItem);
+            if(lExit)
+                break;
+            facade.createUser(userInfoItem);
+            facade.attachProductToUser();
+            if(userInfoItem.userType == UserInfoItem.USER_TYPE.Buyer)
+                facade.remind();
+            boolean logOut = false;
+            while(!logOut) {
+                logOut = facade.selectProduct();
+                if(logOut)
+                    break;
+                logOut = facade.productOperation();
+            }
+        }
     }
 }

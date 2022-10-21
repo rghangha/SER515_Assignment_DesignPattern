@@ -1,5 +1,7 @@
 package PTBS;
 
+// Facade Design Pattern
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -10,7 +12,7 @@ public class ProductSelectDlg extends JDialog {
 
     ClassProductList theProductList;
     Product selectedProduct;
-    int nProductLevel = 0;
+    int productCategory = 0;
     boolean mBLogout = false;
     JComboBox<Product> ProductNameComboBox = new JComboBox<Product>();
     JRadioButton highLevelRadio = new JRadioButton();
@@ -85,9 +87,9 @@ public class ProductSelectDlg extends JDialog {
     void okButtonActionPerformed(ActionEvent e) {
         selectedProduct = (Product) ProductNameComboBox.getSelectedItem();
         if (highLevelRadio.isSelected())
-            nProductLevel = 0;
+            productCategory = 0;
         else
-            nProductLevel = 1;
+            productCategory = 1;
         setVisible(false);
     }
 
