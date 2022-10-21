@@ -84,6 +84,7 @@ public class BuyerTradingMenu extends TradingMenu {
         this.getContentPane().add(bCancel, null);
     }
 
+    // Create a new offering for student if not provided
     public void showMenu(Trading trading, Person thePerson) {
         theTrading = trading;
         OfferingIterator theIter = theTrading.getOfferingIterator();

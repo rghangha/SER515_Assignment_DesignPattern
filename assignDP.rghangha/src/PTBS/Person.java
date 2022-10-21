@@ -1,5 +1,7 @@
 package PTBS;
 
+// Bridge Design Pattern
+
 import java.util.Iterator;
 
 abstract public class Person {

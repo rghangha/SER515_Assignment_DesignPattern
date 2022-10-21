@@ -1,5 +1,7 @@
 package PTBS;
 
+// Iterator Design Pattern
+
 import java.util.*;
 
 public class ListIterator implements Iterator<Object> {

@@ -33,7 +33,7 @@ public class OfferingBiddingDlg extends JDialog {
         buttonSet.setBounds(new Rectangle(217, 67, 79, 29));
         buttonSet.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent e){
-                buttonOkActionPerformed(e);
+                buttonSetActionPerformed(e);
             }
         });
         labelOfferingFileName.setBounds(new Rectangle(212, 34, 163, 18));
@@ -50,7 +50,7 @@ public class OfferingBiddingDlg extends JDialog {
         setVisible(true);
     }
 
-    void buttonOkActionPerformed(ActionEvent e){
+    void buttonSetActionPerformed(ActionEvent e){
         theOffering.theBid = Integer.parseInt(tfBid.getText());
         setVisible(false);
     }
